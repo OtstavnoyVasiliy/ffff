@@ -29,8 +29,10 @@ public class Main {
                 res = b / c;
                 break;
             //res - результат на вывод    }
-            System.out.println(res);
-        }
 
+            default:
+                throw new IllegalStateException("Unexpected value: " + a);
+        }
+        System.out.println(res);
     }
 }
