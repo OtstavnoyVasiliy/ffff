@@ -6,31 +6,33 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int res;
-        String s = null;
+        double res;
+
         Scanner in = new Scanner(System.in);
         System.out.println("_______" + "Введите первое значение" + "______");
-        int b = in.nextInt();
+        double b = in.nextDouble();
         System.out.println("_______" + "Введите знак" + "______");
-        char a = s.charAt(0);
+        String a=in.next();
         System.out.println("_______" + "Введите второе значение" + "______");
         int c = in.nextInt();
         switch (a) {
-            case '+':
+            case "+":
                 res = b + c;
                 break;
-            case '-':
+            case "-":
                 res = b - c;
                 break;
-            case '*':
+            case "*":
                 res = b * c;
                 break;
-            case '/':
+            case "/":
                 res = b / c;
                 break;
-            //res - результат на вывод    }
-            System.out.println(res);
-        }
+            //res - результат на вывод
 
+            default:
+                throw new IllegalStateException("Unexpected value: " + a);
+        }
+        System.out.println(res);
     }
 }
