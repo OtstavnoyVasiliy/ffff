@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int res;
+        double res;
         String s = null;
         Scanner in = new Scanner(System.in);
         System.out.println("_______" + "Введите первое значение" + "______");
@@ -28,7 +28,7 @@ public class Main {
             case "/":
                 res = b / c;
                 break;
-            //res - результат на вывод    }
+            //res - результат на вывод    
 
             default:
                 throw new IllegalStateException("Unexpected value: " + a);
