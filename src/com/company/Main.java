@@ -12,20 +12,20 @@ public class Main {
         System.out.println("_______" + "Введите первое значение" + "______");
         int b = in.nextInt();
         System.out.println("_______" + "Введите знак" + "______");
-        char a = s.charAt(0);
+        String a=in.next();
         System.out.println("_______" + "Введите второе значение" + "______");
         int c = in.nextInt();
         switch (a) {
-            case '+':
+            case "+":
                 res = b + c;
                 break;
-            case '-':
+            case "-":
                 res = b - c;
                 break;
-            case '*':
+            case "*":
                 res = b * c;
                 break;
-            case '/':
+            case "/":
                 res = b / c;
                 break;
             //res - результат на вывод    }
